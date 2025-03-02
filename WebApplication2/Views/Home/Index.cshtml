@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="main-content">
+    <div class="container">
+        <h1>Write It Down</h1>
+        <p>Your thoughts, your ideas, your notes—stored simply and beautifully.</p>
+    </div>
+</div>
+
+<style>
+    /* Vibrant gradient background */
+    body {
+        background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff6a88, #ff5252);
+        font-family: "Playfair Display", serif;
+        color: white;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Transparent header */
+    header {
+        background: transparent;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 9999;
+    }
+
+    /* Transparent footer */
+    footer {
+        background: transparent;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        padding: 10px;
+        z-index: 9999;
+    }
+
+    .container {
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive font size */
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    p {
+        font-size: clamp(1rem, 2vw, 1.2rem); /* Responsive font size */
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+</style>
